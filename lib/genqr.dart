@@ -21,12 +21,9 @@ class _GenerateQRCodeState extends State<GenerateQRCode> {
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: <Widget>[
               if (urlController.text.isNotEmpty)
-                QrImage(
-                  data: urlController.text,
-                  size: 200,
-                ),
+                QrImageView(data: "Hello World"),
               SizedBox(height: 10),
               Container(
                 padding: EdgeInsets.only(left: 10, right: 10),
